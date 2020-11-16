@@ -99,13 +99,20 @@ body {
 }
 
 .hamburger-div {
+    padding: 0;
     top: 0;
     left: 0;
     position: fixed;
+    display: flex;
+    align-items: center;
     height: 60px;
     width: 100%;
     background-color: black;
     z-index: 100;
+
+    .hamburger {
+        padding: 1rem 1.5rem;
+    }
 }
 
 .nav {
