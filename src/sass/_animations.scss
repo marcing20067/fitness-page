@@ -1,0 +1,77 @@
+.bottom-scroll-class {
+    animation: bottom-animation-scroll 1.5s forwards;
+
+    @media (min-width: 768px) {
+        &:nth-of-type(1) {
+            animation-delay: .3s;
+        }
+
+
+        &:nth-of-type(3) {
+            animation-delay: .3s;
+        }
+    }
+}
+
+.scale-scroll-class {
+    animation: scale .7s forwards;
+
+    @media (min-width: 768px) {
+        &:nth-of-type(2) {
+            animation-delay: .2s;
+        }
+
+        &:nth-of-type(3) {
+            animation-delay: .3s;
+        }
+
+        &:nth-of-type(4) {
+            animation-delay: .4s;
+        }
+    }
+}
+
+.animation {
+    opacity: 0;
+}
+
+@keyframes scale {
+    from {
+        transform: scale(.6);
+        opacity: 0;
+    }
+
+    to {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+
+@keyframes bottom-animation-scroll {
+    from {
+        transform: translateY(50%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0%);
+        opacity: 1;
+    }
+}
+
+@media (min-width: 992px) {
+    .hero-animation {
+        animation: hero-animation .5s ease forwards;
+    }
+
+    @keyframes hero-animation {
+        from {
+            height: 0;
+        }
+
+        to {
+            height: 60vh;
+        }
+    }
+}
