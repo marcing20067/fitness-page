@@ -31,5 +31,3 @@ The first decent site that deserves a place in my portfolio. It is a showcase of
 - Gulp
 
 To scroll animation I use my mini-library. [Click here](https://github.com/marcing20067/mg-scroll-animation) i look repository ;).
-
-To scroll animation I used my mini-library. Click here and look at repository ;).
