@@ -45,3 +45,17 @@
     color: #ffffff;
 }
 
+.click-element {
+    padding: 0.4em 0.8em;
+    border: 3px solid transparent;
+    outline: none;
+    &:focus {
+        outline: none;
+        border: 3px solid white;
+    }
+
+    &--black:focus {
+        border: 3px solid #820;
+    }
+    
+}
