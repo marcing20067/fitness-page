@@ -42,17 +42,17 @@ const nextSlide = () => {
     slideIndex++;
     slideFunction();
     clearInterval(slideLoop);
-    slideLoop = window.setInterval(nextSlide, 2500);
+    slideLoop = window.setInterval(nextSlide, 4500);
 }
 
 const backSlide = () => {
     slideIndex = slideIndex - 1;
     slideFunction();
     clearInterval(slideLoop);
-    slideLoop = window.setInterval(nextSlide, 2500);
+    slideLoop = window.setInterval(nextSlide, 4500);
 }
 
 backBtn.addEventListener("click", backSlide)
 nextBtn.addEventListener("click", nextSlide)
 
-let slideLoop = window.setInterval(nextSlide, 2000);
+let slideLoop = window.setInterval(nextSlide, 4500);

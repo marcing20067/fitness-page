@@ -20,4 +20,12 @@ const checkWidth = () => {
     window.innerWidth >= 768 ? heroImg.setAttribute("src", "./dist/images/boy.jpg") : heroImg.setAttribute("src", "./dist/images/boy-mobile.jpg");
 }
 checkWidth();
-window.addEventListener("resize", checkWidth);
+
+const checkWidth2 = () => {
+    window.innerWidth >= 992 ? boxImg.classList.add("hero-animation") : null;
+}
+
+window.addEventListener("resize", () => {
+    checkWidth();
+    checkWidth2();
+});
