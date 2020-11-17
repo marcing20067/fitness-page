@@ -214,7 +214,7 @@ body {
 
 .our-localization {
     .wrapper {
-        width: 100%;
+        width: 85%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 1fr);
@@ -230,8 +230,7 @@ body {
         text-align: right;
         border: 1px solid black;
         border-radius: 20px;
-        padding-bottom: 1em;
-        ;
+        padding-bottom: 1em;;
 
         &-img {
             width: 100%;
