@@ -7,8 +7,8 @@ html {
 body {
     width: 100%;
     font-size: 2rem;
-    font-family: 'Lato', sans-serif;
     color: black;
+    font-family: 'Lato', sans-serif;
 }
 
 *,
@@ -24,21 +24,21 @@ body {
 @import 'components';
 
 .header {
-    color: #FFF;
     position: relative;
-    width: 100%;
-    height: 100vh;
     display: grid;
     grid-template-rows: 1fr;
+    width: 100%;
+    height: 100vh;
+    color: #FFF;
     overflow: hidden;
 
     &__hero-img {
         position: absolute;
-        z-index: -2;
         top: 6rem;
-        min-height: calc(100vh - 6rem);
         width: 100%;
+        min-height: calc(100vh - 6rem);
         filter: brightness(0.5);
+        z-index: -2;
     }
 
     &__box-content {
@@ -48,13 +48,13 @@ body {
 
 
     .wrapper {
-        width: 100%;
         margin-bottom: 2em;
+        width: 100%;
     }
 
     &__title {
-        text-align: left;
         margin-bottom: 1rem;
+        text-align: left;
     }
 
     &__text {
@@ -72,16 +72,15 @@ body {
 
     &__link {
         position: relative;
-        color: white;
-        text-decoration: none;
-        background-color: black;
         padding: 0.5em 1em;
-        border-radius: 8px;
         margin-bottom: 1em;
+        color: white;
+        background-color: black;
+        border-radius: 8px;
+        text-decoration: none;
         overflow: hidden;
 
         &::before {
-            content: '';
             position: absolute;
             top: -2rem;
             left: -100%;
@@ -90,6 +89,7 @@ body {
             background-image: linear-gradient(-70deg, rgba(255, 255, 255, .5), rgba(255, 255, 255, 0));
             transform: rotate(20deg);
             transition: .35s;
+            content: '';
         }
 
         &:hover::before {
@@ -99,13 +99,13 @@ body {
 }
 
 .hamburger-div {
-    padding: 0;
+    position: fixed;
     top: 0;
     left: 0;
-    position: fixed;
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    padding: 0;
     height: 6rem;
     width: 100%;
     background-color: black;
@@ -119,19 +119,19 @@ body {
 .nav {
     &__list {
         position: fixed;
-        height: calc(100vh - 6rem);
-        transform: translateX(100%);
-        width: 100%;
         top: 6rem;
         left: 0;
-        z-index: 100;
+        transform: translateX(100%);
+        height: calc(100vh - 6rem);
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-around;
+        width: 100%;
         background-color: black;
         list-style: none;
         transition: transform .5s;
+        z-index: 100;
 
         &--active {
             transform: translateX(0%);
@@ -140,8 +140,8 @@ body {
 
     &__link {
         display: block;
-        text-decoration: none;
         color: white;
+        text-decoration: none;
         transition: transform .3s;
 
         &:hover {
@@ -154,7 +154,6 @@ body {
 
 
 .about-firm {
-    color: #FFF;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -163,7 +162,8 @@ body {
     background-position: center;
     background-attachment: fixed;
     background-image: linear-gradient(45deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../images/exercise-mobile.jpg");
-
+    color: #FFF;
+    
     &__text {
         padding: 0 2rem;
     }
@@ -214,11 +214,11 @@ body {
 
 .our-localization {
     .wrapper {
-        width: 85%;
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto repeat(3, 1fr);
         row-gap: 1.5em;
+        width: 85%;
         overflow: hidden;
     }
 
@@ -227,10 +227,10 @@ body {
     }
 
     &__element {
-        text-align: right;
+        padding-bottom: 1em;;
         border: 1px solid black;
         border-radius: 20px;
-        padding-bottom: 1em;;
+        text-align: right;
 
         &-img {
             width: 100%;
@@ -238,8 +238,8 @@ body {
         }
 
         &-list {
-            list-style: none;
             padding: 0 1em;
+            list-style: none;
 
             &-item {
 
@@ -249,13 +249,13 @@ body {
                 }
 
                 &-heading::before {
-                    content: "";
                     display: inline-block;
                     height: 1em;
                     width: 1em;
                     background-size: 1em 1em;
                     background-image: url("../images/icons/map-pin.svg");
                     background-repeat: no-repeat;
+                    content: "";
                 }
 
                 &:nth-of-type(2) &-heading::before {
@@ -276,11 +276,11 @@ body {
 
             &-box {
                 position: relative;
+                margin-right: 0.5rem;
                 height: 5rem;
                 width: 5rem;
                 border-radius: 50%;
                 overflow: hidden;
-                margin-right: 0.5rem;
             }
 
             &-img {
@@ -298,18 +298,18 @@ body {
     }
 
     .slider {
-        width: 90%;
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
         grid-template-rows: auto 1fr;
+        width: 90%;
 
         &__btn {
-            background: none;
-            width: 7rem;
-            cursor: pointer;
-            opacity: .7;
-            transition: opacity .3s;
             padding: 0;
+            width: 7rem;
+            opacity: .7;
+            background: none;
+            transition: opacity .3s;
+            cursor: pointer;
 
             &:hover {
                 opacity: 1;
@@ -335,16 +335,16 @@ body {
 
         &__extra-box {
             grid-column: 1/4;
+            grid-row: 1/2;
             width: 100%;
             overflow: hidden;
-            grid-row: 1/2;
         }
 
         &__box {
-            width: calc(400% + 3em*4);
             display: grid;
             grid-template-rows: 1fr;
             grid-template-columns: repeat(4, 1fr);
+            width: calc(400% + 3em*4);
             transition: transform .7s;
 
             &--slide1 {
@@ -364,8 +364,8 @@ body {
             }
 
             &-item {
-                margin-right: 3em;
                 padding: 1.5rem;
+                margin-right: 3em;
                 background-color: #fff;
 
                 &-img {
@@ -391,8 +391,8 @@ body {
     }
 
     &__box {
-        width: fit-content;
         margin: 0 auto;
+        width: fit-content;
 
         &-text {
             display: flex;
@@ -401,12 +401,12 @@ body {
 
             &::before {
                 position: static;
+                display: inline-block;
                 width: 2em;
-                content: '';
                 height: 1.5em;
                 background-repeat: no-repeat;
                 background-size: 1.5em 1.5em;
-                display: inline-block;
+                content: '';
             }
 
             &:nth-child(1)::before {
@@ -429,8 +429,8 @@ body {
     }
 
     &__text {
-        text-align: center;
         margin-top: 1.5em;
+        text-align: center;
     }
 }
 

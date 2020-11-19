@@ -22,10 +22,10 @@
 
     .why-we {
         .wrapper {
-            width: 95%;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: repeat(5, auto);
             column-gap: 3.5em;
+            width: 95%;
         }
 
         &__title {
@@ -54,8 +54,6 @@
         &__title {
             grid-row: 1/2;
         }
-
-     
     }
 
     .opinion {
@@ -70,7 +68,6 @@
 
     .footer {
         .wrapper {
-            width: 85%;
             display: grid;
             grid-template-columns: auto 1fr auto;
             grid-template-rows: auto auto auto;
@@ -78,6 +75,7 @@
                 "title title title"
                 "nav . text"
                 "end-text end-text end-text";
+            width: 85%;
         }
 
         &__box-text {
@@ -89,8 +87,8 @@
         }
 
         &__nav {
-            display: block;
             grid-area: nav;
+            display: block;
 
             &-list {
                 list-style: none;
@@ -106,7 +104,7 @@
                     &:hover::before {
                         transform: scaleX(0);
                     }
-                    
+
                     &::before {
                         transform-origin: right;
                         margin-left: auto;
