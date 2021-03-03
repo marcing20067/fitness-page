@@ -1,0 +1,35 @@
+@import 'reset';
+@import 'footer';
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.header {
+  flex-grow: 1;
+  background-image: linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0.75),
+    rgba(0, 0, 0, 0.75)
+  ),
+  url('../images/cat-mobile.jpg');
+  background-size: cover;
+  background-position: center top;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media(min-width: 768px) {
+    .header {
+        background-image: linear-gradient(
+            45deg,
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+          ),
+          url('../images/cat.jpg');
+    }
+}
