@@ -6,7 +6,4 @@ The first decent site that deserves a place in my portfolio. It is a showcase of
 
 ## Technologies
 
-- HTML
-- (S)CSS
-- JavaScript
-- Gulp
+HTML, (S)CSS, JavaScript, Gulp
