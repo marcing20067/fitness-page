@@ -4,8 +4,7 @@
 
   &__wrapper {
     padding-top: 0;
-    max-width: 80%;
-    width: fit-content;
+    width: 80%;
   }
 
   &__nav {
@@ -84,7 +83,6 @@
     }
 
     &__wrapper {
-      width: 100%;
       display: flex;
       justify-content: space-between;
     }
